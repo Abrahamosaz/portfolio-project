@@ -2,26 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "europa-grotesk-regular";
+  src: url("/public/fonts/europa-grotesk-medium.ttf") format("truetype");
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  font-family: "europa-grotesk-regular", sans-serif !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Portfolio Background Gradient CSS */
+.hero-background {
+  background: linear-gradient(
+    to bottom,
+    #000419 0%,
+    #000831 50%,
+    #000c47 85%,
+    #001463 100%
+  );
+  position: relative;
+  overflow: hidden;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.company-background {
+  background: linear-gradient(
+    180deg,
+    #000419 0%,
+    #000831 30%,
+    #000d54 70%,
+    #001163 100%
+  );
+  position: relative;
+  overflow: hidden;
 }

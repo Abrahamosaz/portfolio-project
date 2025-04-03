@@ -9,8 +9,24 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#FF6363",
+      },
+
+      screens: {
+        "3xs": "350px",
+        "2xs": "480px",
+        xs: "576px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1200px",
+        "2xl": "1440px",
+        "3xl": "1600px",
+        "4xl": "1800px",
+      },
+
+      fontFamily: {
+        regular: ["europa-grotesk-regular", "sans-serif"],
       },
     },
   },
