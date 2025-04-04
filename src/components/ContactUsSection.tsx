@@ -87,7 +87,7 @@ const ContactUsSection = () => {
         message: "Thank you for your message! I will get back to you soon.",
       });
       reset();
-    } catch (error) {
+    } catch {
       setSubmitStatus({
         type: "error",
         message: "Sorry, something went wrong. Please try again later.",
@@ -111,7 +111,7 @@ const ContactUsSection = () => {
           variants={fadeIn("down", "tween", 0.2, 1)}
           className="text-4xl md:text-6xl font-bold text-[#BBCDE5] text-center"
         >
-          Let's Connect
+          Let&apos;s Connect
         </motion.h1>
 
         <div className="mt-5 md:mt-10 flex md:flex-row flex-col text-center md:text-left items-center justify-between gap-8 text-[#FEFEFF]">

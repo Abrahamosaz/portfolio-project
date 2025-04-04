@@ -1,4 +1,3 @@
-import CompanySection from "@/components/CompanySection";
 import ContactUsSection from "@/components/ContactUsSection";
 import HeroSection from "@/components/HeroSection";
 import MyStacksSection from "@/components/MyStacksSection";

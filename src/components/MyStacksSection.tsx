@@ -10,13 +10,12 @@ import {
   vscode,
   springboot,
   nestjs,
-  nextjs,
   kafka,
-  grpc,
 } from "@/public/icons";
 
 const MyStacksSection = () => {
-  const [stars, setStars] = useState<any[]>([]);
+  // const [stars, setStars] = useState<any[]>([]);
+  // @typescript-eslint/no-explicit-any
   const [iconPositions, setIconPositions] = useState<any>({});
   const [dimensions, setDimensions] = useState({
     width: 800,
@@ -54,7 +53,7 @@ const MyStacksSection = () => {
         size: `${Math.random() * 2 + 1}px`,
       });
     }
-    setStars(newStars);
+    // setStars(newStars);
   }, [dimensions]);
 
   // Update icon animation effect

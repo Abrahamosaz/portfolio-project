@@ -32,7 +32,7 @@ const HeroSection = () => {
           {/* Desktop Version */}
           <motion.div className="w-full h-full font-bold md:flex hidden flex-col gap-1 lg:gap-3.5 text-center text-white text-3xl md:text-4xl lg:text-5xl">
             <motion.p variants={textVariant(0.1)}>
-              Hi There! I'm Abraham Omorisiagbon,
+              Hi There! I&apos;m Abraham Omorisiagbon,
             </motion.p>
             <motion.p variants={textVariant(0.2)}>
               A Software Engineer &
@@ -45,7 +45,7 @@ const HeroSection = () => {
           {/* Mobile Version */}
           <motion.div className="md:hidden w-full font-bold flex flex-col gap-0 lg:gap-3.5 text-center text-white text-2xl">
             <motion.p variants={textVariant(0.1)}>
-              Hi There! I'm Abraham
+              Hi There! I&apos;m Abraham
             </motion.p>
             <motion.p variants={textVariant(0.2)}>
               Omorisiagbon, A Software Engineer &

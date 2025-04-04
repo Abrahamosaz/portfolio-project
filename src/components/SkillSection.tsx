@@ -8,6 +8,7 @@ import { esoftResponse, jpgold, kemdi, wisper } from "@/public/icons";
 import { mySkillSets } from "../constants";
 import { mySkillSetsProps } from "../types";
 
+// @typescript-eslint/no-explicit-any
 type skillCardProps = {
   icon: any;
   title: string;
@@ -127,21 +128,25 @@ const SkillSection = () => {
         >
           {[
             <Image
+              key="first"
               className="w-16 h-16 md:w-24 md:h-24 object-contain"
               src={jpgold}
               alt={`company`}
             />,
             <Image
+              key="second"
               className="w-16 h-16 md:w-24 md:h-24 object-contain"
               src={wisper}
               alt={`company`}
             />,
             <Image
+              key="third"
               className="w-16 h-16 md:w-24 md:h-24 object-contain"
               src={esoftResponse}
               alt={`company`}
             />,
             <Image
+              key="fourth"
               className="w-16 h-16 md:w-24 md:h-24 object-contain"
               src={kemdi}
               alt={`company`}

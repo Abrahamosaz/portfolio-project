@@ -112,7 +112,7 @@ const ReviewSection = () => {
     <div className="w-full bg-[#000319] flex flex-col gap-4 py-10 md:py-20">
       <div className="flex flex-col md:gap-1 text-center">
         <h3 className="text-base md:text-xl text-[#BBCDE5]">
-          Don't take my word for it
+          Don&apos;t take my word for it
         </h3>
         <h1 className="text-3xl md:text-4xl lg:text-5xl text-[#BBCDE5] font-bold">
           Trust My Clients
