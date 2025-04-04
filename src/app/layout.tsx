@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className="w-full">
         {children}
         <Footer />
-        <WhatsAppChatbot phoneNumber="2348161909748" />
+        <WhatsAppChatbot phoneNumber="2348061909748" />
       </body>
     </html>
   );
