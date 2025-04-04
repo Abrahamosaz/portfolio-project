@@ -58,7 +58,7 @@ const ProjectCard: React.FC<projectCardProps> = ({
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center justify-center gap-2 rounded-3xl text-center py-3 bg-gradient-to-r from-[#566CFF]/80 to-[#4054DD]/80 hover:from-[#566CFF] hover:to-[#4054DD] flex-1 transition-all duration-300"
+            className="flex items-center justify-center gap-2 rounded-3xl text-center bg-transparent py-3 bg-gradient-to-r from-[#566CFF]/80 to-[#4054DD]/80 hover:from-[#566CFF] hover:to-[#4054DD] flex-1 transition-all duration-300"
           >
             <p className="text-sm md:text-base font-medium">View Live</p>
             <Image className="w-3 h-3" src={redirect} alt="redirect" />
@@ -69,7 +69,7 @@ const ProjectCard: React.FC<projectCardProps> = ({
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center justify-center gap-2 rounded-3xl border border-white/20 hover:border-white/40 text-center py-3 flex-1 transition-all duration-300 backdrop-blur-sm"
+            className="flex items-center justify-center gap-2 rounded-3xl bg-transparent border border-white/20 hover:border-white/40 text-center py-3 flex-1 transition-all duration-300 backdrop-blur-sm"
           >
             <p className="text-sm md:text-base font-medium">Github</p>
             <Image className="w-4 h-4" src={github} alt="github" />
