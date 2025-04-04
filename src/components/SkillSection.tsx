@@ -37,11 +37,7 @@ const SkillCard: React.FC<skillCardProps> = ({
         scale: 1.05,
         transition: { duration: 0.2 },
       }}
-      className="p-5 md:p-10 flex items-center justify-center rounded-3xl shadow-lg"
-      style={{
-        background: "linear-gradient(to bottom, #000319, #0A0C19)",
-        boxShadow: "0 0 20px rgba(0, 3, 25, 0.6)",
-      }}
+      className="p-5 md:p-10 flex items-center justify-center rounded-3xl shadow-lg bg-gradient-to-b from-[#030E61] via-[#030619] to-[#344090]"
     >
       <div className="flex flex-col text-center md:text-left gap-4 pt-5 md:pt-10 pb-[6rem] md:pb-[8rem]">
         <motion.div
@@ -89,7 +85,7 @@ const SkillSection = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="company-background w-full py-10 pb-20 md:py-20 flex flex-col gap-8 relative z-0"
+      className="bg-gradient-to-b from-[#00063A] to-[#000319] w-full py-10 pb-20 md:py-20 flex flex-col gap-8 relative z-0"
     >
       <motion.div
         initial={{ y: -50 }}
@@ -101,7 +97,7 @@ const SkillSection = () => {
           initial={{ scale: 0.5 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="text-[#BBCDE5] text-center text-xl font-semibold"
+          className="text-[#BBCDE5] text-center text-xl md:text-3xl lg:text-4xl font-semibold"
         >
           COMPANY EXPERIENCES
         </motion.h3>

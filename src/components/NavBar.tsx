@@ -7,6 +7,17 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleDownloadResume = () => {
+    const resumeUrl = "/files/resume.pdf";
+    // Create a temporary link element
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "Abraham-Omorisiagbon.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <motion.div
       initial={{ y: -100, opacity: 0 }}
@@ -33,6 +44,12 @@ const NavBar = () => {
       {/* Desktop Menu */}
       <div className="hidden lg:flex items-center justify-between space-x-20">
         <motion.div whileHover={{ y: -2 }} transition={{ duration: 0.2 }}>
+          <Link className="text-[#FEFEFF]" href="#projects">
+            PROJECTS
+          </Link>
+        </motion.div>
+
+        <motion.div whileHover={{ y: -2 }} transition={{ duration: 0.2 }}>
           <Link className="text-[#FEFEFF]" href="#contacts">
             CONTACTS
           </Link>
@@ -41,6 +58,7 @@ const NavBar = () => {
         <motion.div
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          onClick={handleDownloadResume}
           className="flex items-center gap-2 bg-[#566CFF] p-4 py-2 rounded-lg text-white"
         >
           <button className="font-semibold">RESUME</button>
@@ -59,6 +77,12 @@ const NavBar = () => {
           <div className="flex flex-col space-y-4">
             <Link
               className="text-[#FEFEFF] text-sm text-center"
+              href="#projects"
+            >
+              PROJECTS
+            </Link>
+            <Link
+              className="text-[#FEFEFF] text-sm text-center"
               href="#contacts"
             >
               CONTACTS
@@ -66,6 +90,7 @@ const NavBar = () => {
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={handleDownloadResume}
               className="flex items-center text-sm justify-center gap-2 bg-[#566CFF] p-4 py-2 rounded-lg text-white"
             >
               <button className="font-semibold">RESUME</button>

@@ -104,7 +104,7 @@ const ContactUsSection = () => {
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
       id="contacts"
-      className="pt-10 bg-[#000319] flex items-center justify-center w-full py-4"
+      className="py-10 md:py-20 bg-[#000319] flex items-center justify-center w-full"
     >
       <div className="w-[90%] flex flex-col gap-4">
         <motion.h1

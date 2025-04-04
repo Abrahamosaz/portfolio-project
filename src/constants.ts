@@ -1,4 +1,4 @@
-import { nattypay } from "@/public/images";
+import { nattypay, wth, jpgold, swiftreseller } from "@/public/images";
 import { mySkillSetsProps, projectCardProps } from "./types";
 import { ai, api, cloud, code } from "@/public/icons";
 
@@ -6,38 +6,82 @@ export const AllProjects: projectCardProps[] = [
   {
     id: 1,
     previewSite: nattypay,
-    title: "Outsourcing platform",
+    title: "NattyPay - Digital Payment Platform",
     description:
-      "Every project, challenge, and collaboration has shaped me into the developer....",
-    githubLink: "",
-    hostedLink: "",
+      "A modern fintech solution that enables secure digital payments and financial transactions. Built with a focus on user experience and security, featuring real-time payment processing, wallet management, and seamless fund transfers.",
+    githubLink: "https://github.com/Abrahamosaz",
+    hostedLink: "https://nattypay.com",
   },
   {
     id: 2,
-    previewSite: nattypay,
-    title: "Outsourcing platform",
+    previewSite: wth,
+    title: "WebTrendsHub Bills - Utility Bill Management",
     description:
-      "Every project, challenge, and collaboration has shaped me into the developer....",
-    githubLink: "",
-    hostedLink: "",
+      "A comprehensive utility bill management system that streamlines payment processing for various services. Features include automated billing, payment tracking, and an intuitive dashboard for managing multiple utility accounts in one place.",
+    githubLink: "https://github.com/Abrahamosaz",
+    hostedLink: "http://bills.webtrendshub.com",
   },
   {
     id: 3,
-    previewSite: nattypay,
-    title: "Outsourcing platform",
+    previewSite: jpgold,
+    title: "JP Gold - Cryptocurrency Trading Platform",
     description:
-      "Every project, challenge, and collaboration has shaped me into the developer....",
-    githubLink: "",
-    hostedLink: "",
+      "A sophisticated blockchain-based trading platform specializing in precious metals and cryptocurrencies. Features include real-time market data, secure wallet integration, advanced trading tools, and an intuitive interface for seamless trading experience.",
+    githubLink: "https://github.com/Abrahamosaz",
+    hostedLink: "https://new-jpgold.vercel.app",
   },
   {
     id: 4,
-    previewSite: nattypay,
-    title: "Outsourcing platform",
+    previewSite: swiftreseller,
+    title: "SwiftReseller - E-Commerce Management System",
     description:
-      "Every project, challenge, and collaboration has shaped me into the developer....",
-    githubLink: "",
-    hostedLink: "",
+      "A modern e-commerce management platform built with Next.js and Node.js, featuring inventory tracking, order management, and automated sales reporting. Integrated with multiple payment gateways and includes a responsive dashboard for real-time business analytics and customer order processing.",
+    githubLink: "https://github.com/Abrahamosaz",
+    hostedLink: "https://swiftreseller.com",
+  },
+];
+
+export const WebProjects: projectCardProps[] = [
+  {
+    id: 1,
+    previewSite: nattypay,
+    title: "NattyPay - Digital Payment Platform",
+    description:
+      "A modern fintech solution that enables secure digital payments and financial transactions. Built with a focus on user experience and security, featuring real-time payment processing, wallet management, and seamless fund transfers.",
+    githubLink: "https://github.com/Abrahamosaz",
+    hostedLink: "https://nattypay.com",
+  },
+  {
+    id: 2,
+    previewSite: wth,
+    title: "WebTrendsHub Bills - Utility Bill Management",
+    description:
+      "A comprehensive utility bill management system that streamlines payment processing for various services. Features include automated billing, payment tracking, and an intuitive dashboard for managing multiple utility accounts in one place.",
+    githubLink: "https://github.com/Abrahamosaz",
+    hostedLink: "http://bills.webtrendshub.com",
+  },
+  {
+    id: 4,
+    previewSite: swiftreseller,
+    title: "SwiftReseller - E-Commerce Management System",
+    description:
+      "A modern e-commerce management platform built with Next.js and Node.js, featuring inventory tracking, order management, and automated sales reporting. Integrated with multiple payment gateways and includes a responsive dashboard for real-time business analytics and customer order processing.",
+    githubLink: "https://github.com/Abrahamosaz",
+    hostedLink: "https://swiftreseller.com",
+  },
+];
+
+export const MobileProjects: projectCardProps[] = [];
+
+export const BlockchainProjects: projectCardProps[] = [
+  {
+    id: 1,
+    previewSite: jpgold,
+    title: "JP Gold - Cryptocurrency Trading Platform",
+    description:
+      "A sophisticated blockchain-based trading platform specializing in precious metals and cryptocurrencies. Features include real-time market data, secure wallet integration, advanced trading tools, and an intuitive interface for seamless trading experience.",
+    githubLink: "https://github.com/Abrahamosaz",
+    hostedLink: "https://new-jpgold.vercel.app",
   },
 ];
 

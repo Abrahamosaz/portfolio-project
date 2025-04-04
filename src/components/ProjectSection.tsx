@@ -5,7 +5,7 @@ import classNames from "classnames";
 import Image from "next/image";
 import { arrow, github, redirect } from "@/public/icons";
 import { projectCardProps } from "../types";
-import { AllProjects } from "../constants";
+import { AllProjects, BlockchainProjects, WebProjects } from "../constants";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 
@@ -46,7 +46,7 @@ const ProjectCard: React.FC<projectCardProps> = ({
           <h2 className="text-white/90 font-medium text-base md:text-xl">
             {title}
           </h2>
-          <p className="text-white/60 text-xs md:text-sm leading-relaxed">
+          <p className="text-white/60 text-sm md:text-base leading-relaxed">
             {description}
           </p>
         </div>
@@ -54,6 +54,8 @@ const ProjectCard: React.FC<projectCardProps> = ({
         <div className="mt-2 md:mt-5 w-full flex items-center gap-4 text-white">
           <motion.a
             href={hostedLink}
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="flex items-center justify-center gap-2 rounded-3xl text-center py-3 bg-gradient-to-r from-[#566CFF]/80 to-[#4054DD]/80 hover:from-[#566CFF] hover:to-[#4054DD] flex-1 transition-all duration-300"
@@ -63,6 +65,8 @@ const ProjectCard: React.FC<projectCardProps> = ({
           </motion.a>
           <motion.a
             href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="flex items-center justify-center gap-2 rounded-3xl border border-white/20 hover:border-white/40 text-center py-3 flex-1 transition-all duration-300 backdrop-blur-sm"
@@ -88,13 +92,13 @@ const ProjectSection = () => {
         renderProjects = AllProjects;
         break;
       case "web":
-        renderProjects = [];
+        renderProjects = WebProjects;
         break;
       case "mobile":
         renderProjects = [];
         break;
       case "blockchain":
-        renderProjects = [];
+        renderProjects = BlockchainProjects;
         break;
       default:
         renderProjects = AllProjects;
@@ -109,6 +113,7 @@ const ProjectSection = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
+      id="projects"
       className="w-full py-16 md:py-24 md:pb-40 bg-[#0a0a1b] bg-gradient-to-b from-[#0a0a1b] to-[#0f0f2b] relative z-0"
     >
       <div className="flex flex-col items-center justify-center gap-8">

@@ -3,12 +3,10 @@
 import { StaticImageData } from "next/image";
 import React from "react";
 import Image from "next/image";
-import { jpgold } from "@/public/icons";
 import { profilePicture } from "@/public/images";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import { useWindowSize } from "../hooks/useWindowSize";
-import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import "swiper/css";
 
 type ReviewCardProps = {
@@ -21,66 +19,62 @@ type ReviewCardProps = {
 const reviews1: ReviewCardProps[] = [
   {
     image: profilePicture,
-    title: "Spencer Walkings",
-    subtitle: "CEO, Telemondo Ltd",
+    title: "Sarah Chen",
+    subtitle: "CTO, TechFlow Solutions",
     content:
-      "Working with Abraham was a game-changer. They took our complex project and turned it into a seamless, high-performance web application. Their attention to detail and innovative approach are unmatched!",
+      "Abraham's expertise in React and Next.js transformed our legacy application completely. Their implementation of modern practices and performance optimizations reduced our load times by 60%. What impressed me most was their ability to explain complex technical decisions in a way our entire team could understand.",
   },
   {
     image: profilePicture,
-    title: "Spencer Walkings",
-    subtitle: "CEO, Telemondo Ltd",
+    title: "Michael Rodriguez",
+    subtitle: "Founder, DesignCraft Studio",
     content:
-      "Working with Abraham was a game-changer. They took our complex project and turned it into a seamless, high-performance web application. Their attention to detail and innovative approach are unmatched!",
+      "I hired Abraham to build our company's e-commerce platform, and the results exceeded our expectations. They not only delivered a beautiful, responsive design but also implemented complex features like real-time inventory tracking and seamless payment integration. Their attention to UX details made our conversion rate jump by 40%.",
   },
-
   {
     image: profilePicture,
-    title: "Spencer Walkings",
-    subtitle: "CEO, Telemondo Ltd",
+    title: "Emily Watson",
+    subtitle: "Product Manager, InnovateTech",
     content:
-      "Working with Abraham was a game-changer. They took our complex project and turned it into a seamless, high-performance web application. Their attention to detail and innovative approach are unmatched!",
+      "Working with Abraham was refreshing - they don't just code, they think strategically. When our project faced scaling challenges, they proposed and implemented elegant solutions using Next.js and TypeScript. Their code is clean, well-documented, and maintainable - exactly what we needed for our growing startup.",
   },
-
   {
     image: profilePicture,
-    title: "Spencer Walkings",
-    subtitle: "CEO, Telemondo Ltd",
+    title: "David Park",
+    subtitle: "Lead Developer, CloudScale Inc",
     content:
-      "Working with Abraham was a game-changer. They took our complex project and turned it into a seamless, high-performance web application. Their attention to detail and innovative approach are unmatched!",
+      "Abraham's full-stack expertise is remarkable. They rebuilt our dashboard using modern React patterns and implemented efficient API endpoints that significantly improved our data loading times. Their knowledge of both frontend and backend technologies made them an invaluable asset to our project.",
   },
 ];
 
 const reviews2: ReviewCardProps[] = [
   {
     image: profilePicture,
-    title: "Spencer Walkings",
-    subtitle: "CEO, Telemondo Ltd",
+    title: "Lisa Thompson",
+    subtitle: "Marketing Director, GrowthBox",
     content:
-      "Working with Abraham was a game-changer. They took our complex project and turned it into a seamless, high-performance web application. Their attention to detail and innovative approach are unmatched!",
-  },
-
-  {
-    image: profilePicture,
-    title: "Spencer Walkings",
-    subtitle: "CEO, Telemondo Ltd",
-    content:
-      "Working with Abraham was a game-changer. They took our complex project and turned it into a seamless, high-performance web application. Their attention to detail and innovative approach are unmatched!",
-  },
-
-  {
-    image: profilePicture,
-    title: "Spencer Walkings",
-    subtitle: "CEO, Telemondo Ltd",
-    content:
-      "Working with Abraham was a game-changer. They took our complex project and turned it into a seamless, high-performance web application. Their attention to detail and innovative approach are unmatched!",
+      "Abraham has a rare combination of technical excellence and creative problem-solving. They developed our marketing automation dashboard with beautiful visualizations and intuitive controls. The attention to detail in animations and user interactions really sets their work apart.",
   },
   {
     image: profilePicture,
-    title: "Spencer Walkings",
-    subtitle: "CEO, Telemondo Ltd",
+    title: "James Wilson",
+    subtitle: "Startup Founder, EduTech Plus",
     content:
-      "Working with Abraham was a game-changer. They took our complex project and turned it into a seamless, high-performance web application. Their attention to detail and innovative approach are unmatched!",
+      "As a non-technical founder, I appreciated Abraham's ability to translate our vision into reality. They built our educational platform from scratch, implementing features like real-time collaboration and interactive lessons. Their technical choices have made it easy for us to scale and add new features.",
+  },
+  {
+    image: profilePicture,
+    title: "Rachel Martinez",
+    subtitle: "UX Director, DesignFirst Agency",
+    content:
+      "Abraham stands out for their commitment to user experience. While developing our client portal, they suggested and implemented several UX improvements that we hadn't even considered. Their deep understanding of both design principles and technical implementation is truly valuable.",
+  },
+  {
+    image: profilePicture,
+    title: "Alex Kumar",
+    subtitle: "Engineering Manager, DataFlow Systems",
+    content:
+      "We brought Abraham in for a critical project migration to Next.js, and they delivered exceptional results. Their expertise in performance optimization and state management helped us create a faster, more reliable application. They also mentored our junior developers, leaving a lasting positive impact on our team.",
   },
 ];
 
@@ -115,7 +109,7 @@ const ReviewSection = () => {
   const width = useWindowSize();
 
   return (
-    <div className="w-full bg-[#000319] flex flex-col gap-4 py-10 pb-20">
+    <div className="w-full bg-[#000319] flex flex-col gap-4 py-10 md:py-20">
       <div className="flex flex-col md:gap-1 text-center">
         <h3 className="text-base md:text-xl text-[#BBCDE5]">
           Don't take my word for it

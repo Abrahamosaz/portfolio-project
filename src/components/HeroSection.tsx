@@ -23,7 +23,7 @@ const HeroSection = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="hero-background max-h-screen md:min-h-screen relative overflow-hidden flex flex-col"
+      className="hero-background md:min-h-[80vh] 4xl:min-h-[70vh] relative overflow-hidden flex flex-col"
     >
       <NavBar />
 
