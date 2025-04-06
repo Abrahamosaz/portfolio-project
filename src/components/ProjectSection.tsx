@@ -114,7 +114,7 @@ const ProjectSection = () => {
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
       id="projects"
-      className="w-full py-16 md:py-24 md:pb-40 bg-[#0a0a1b] bg-gradient-to-b from-[#0a0a1b] to-[#0f0f2b] relative z-0"
+      className="w-full py-10 md:py-16 md:pb-40 bg-[#0a0a1b] bg-gradient-to-b from-[#0a0a1b] to-[#0f0f2b] relative z-0"
     >
       <div className="flex flex-col items-center justify-center gap-8">
         <motion.div
@@ -132,7 +132,7 @@ const ProjectSection = () => {
         <div className="mt-5 w-full flex flex-col items-center gap-4 md:gap-8">
           <motion.div
             variants={fadeIn("up", "tween", 0.3, 1)}
-            className="w-[90%] md:w-[80%] lg:w-[70%] flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-4 backdrop-blur-sm bg-[#03061C] py-3 sm:py-4 px-4 sm:px-6 rounded-2xl border-[1px] border-[#BBCDE5]"
+            className="w-[90%] md:w-[80%] 2xl:w-[70%] flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-4 backdrop-blur-sm bg-[#03061C] py-3 sm:py-4 px-4 sm:px-6 rounded-2xl border-[1px] border-[#BBCDE5]"
           >
             {Tabs.map((tab: string, index: number) => (
               <motion.div
@@ -154,7 +154,7 @@ const ProjectSection = () => {
           </motion.div>
           <motion.div
             variants={staggerContainer(0.1, 0.1)}
-            className="w-[90%] md:w-[80%] lg:w-[70%] grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 mt-5"
+            className="w-[90%] md:w-[80%] 2xl:w-[70%] grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 mt-5"
           >
             {projects?.map((project: projectCardProps) => (
               <motion.div key={project.id}>
@@ -168,7 +168,7 @@ const ProjectSection = () => {
           variants={fadeIn("up", "tween", 0.8, 1)}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="mt-8 py-1 px-8 md:px-10 rounded-3xl text-white/90 bg-gradient-to-r from-[#566CFF]/80 to-[#4054DD]/80 flex items-center gap-2 md:gap-3 transition-all duration-300"
+          className="mt-8 py-1 px-6 rounded-3xl text-white/90 bg-gradient-to-r from-[#566CFF]/80 to-[#4054DD]/80 flex items-center gap-2 md:gap-3 transition-all duration-300"
         >
           <p className="text-sm md:text-base font-medium">Contact Now</p>
           <Image className="w-10 h-10" src={arrow} alt="arrow" />

@@ -174,7 +174,7 @@ const SkillSection = () => {
           What I Bring To The Table
         </motion.h1>
 
-        <div className="mt-5 md:mt-10 w-[90%] md:w-[80%] lg:w-[70%] grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+        <div className="mt-5 md:mt-10 w-[90%] md:w-[80%] 2xl:w-[70%] grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
           {mySkillSets?.map((skill: mySkillSetsProps, index: number) => (
             <SkillCard
               key={skill.id}

@@ -28,7 +28,7 @@ const HeroSection = () => {
       <NavBar />
 
       <div className="flex-1 flex items-center justify-center">
-        <div className="w-[90%] md:w-[80%] xl:w-[70%] flex flex-col gap-4 md:gap-8">
+        <div className="w-[90%] md:w-[80%] 2xl:w-[70%] flex flex-col gap-4 md:gap-8">
           {/* Desktop Version */}
           <motion.div className="w-full h-full font-bold md:flex hidden flex-col gap-1 lg:gap-3.5 text-center text-white text-3xl md:text-4xl lg:text-5xl">
             <motion.p variants={textVariant(0.1)}>

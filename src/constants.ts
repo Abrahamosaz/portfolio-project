@@ -35,7 +35,7 @@ export const AllProjects: projectCardProps[] = [
     previewSite: swiftreseller,
     title: "SwiftReseller - E-Commerce Management System",
     description:
-      "A modern e-commerce management platform built with Next.js and Node.js, featuring inventory tracking, order management, and automated sales reporting. Integrated with multiple payment gateways and includes a responsive dashboard for real-time business analytics and customer order processing.",
+      "A modern e-commerce management platform featuring inventory tracking, order management, and automated sales reporting. Integrated with multiple payment gateways and includes a responsive dashboard for analytics.",
     githubLink: "https://github.com/Abrahamosaz",
     hostedLink: "https://swiftreseller.com",
   },
@@ -65,7 +65,7 @@ export const WebProjects: projectCardProps[] = [
     previewSite: swiftreseller,
     title: "SwiftReseller - E-Commerce Management System",
     description:
-      "A modern e-commerce management platform built with Next.js and Node.js, featuring inventory tracking, order management, and automated sales reporting. Integrated with multiple payment gateways and includes a responsive dashboard for real-time business analytics and customer order processing.",
+      "A modern e-commerce management platform featuring inventory tracking, order management, and automated sales reporting. Integrated with multiple payment gateways and includes a responsive dashboard for analytics.",
     githubLink: "https://github.com/Abrahamosaz",
     hostedLink: "https://swiftreseller.com",
   },
